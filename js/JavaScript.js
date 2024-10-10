@@ -16,7 +16,6 @@ function AddCarro2(){
         "cor":document.getElementById("cor").value
     }
     console.log(carro);
-
 }
 
 function AddCarrosArray(){
@@ -50,7 +49,5 @@ function AddCarrosArray(){
     carros.push(carro);
     //carros.unshift(carro);
     
-
     console.log(carros);
-
 }
