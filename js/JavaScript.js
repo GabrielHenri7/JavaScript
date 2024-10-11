@@ -28,7 +28,7 @@ function AddCarrosArray(){
         {
             "marca": "Honda",
             "modelo": "HB20",
-            "Ano":2017,
+            "Ano":2000,
             "cor":"branca"   
         },
         {
@@ -46,8 +46,14 @@ function AddCarrosArray(){
         "cor":document.getElementById("cor").value
     }
 
-    carros.push(carro);
-    //carros.unshift(carro);
-    
+    //carros.push(carro); Final
+    //carros.unshift(carro); Começo
+    carros.slice(2, 1, carro);
     console.log(carros);
+
+    //let findCarro = carros.find(carro => carro.cor == "branca");
+    //console.log(findCarro);
+
+    let filterCarro = carros.filter(car => car.ano >= 2020);
+    console.log(filterCarro);
 }
